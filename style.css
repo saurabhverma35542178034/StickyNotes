@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    /* width: 100%; */
+    height: 100vh;
+}
+#main_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content:space-between;
+}
+
+#left_container{
+    background-color: bisque;
+    width: 50%;
+}
+
+#right_container{
+    background-color: aqua;
+    width: 50%;
+    
+    
+}
+/* Button styling */
+#button {
+    margin-top: 10px;
+}
+/* Textarea and color input styling */
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 2px solid #ff6f61; /* Border color */
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    background-color: #fefefe; /* Light background color */
+    resize: none; /* Disable resizing */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+textarea:focus {
+    border-color: #de5d83; /* Border color on focus */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Color input styling */
+input[type="color"] {
+    margin-top: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="color"]:hover {
+    background: rgba(0, 0, 0, 0.1); /* Light background on hover */
+}
+
+
+/* Button styling */
+#button {
+    margin-top: 10px;
+}
+
+button {
+    background: linear-gradient(45deg, #ff6f61, #de5d83); /* Gradient background */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-transform: uppercase; /* Uppercase text */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    outline: none; /* Remove default outline */
+}
+
+button:hover {
+    background: linear-gradient(45deg, #de5d83, #ff6f61); /* Reversed gradient on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+button:active {
+    background: linear-gradient(45deg, #ff6f61, #de5d83); /* Slightly darker on click */
+    transform: scale(0.95); /* Slightly shrinks on click */
+}
+
+button:focus {
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5); /* Focus outline */
+}
+
+
+
+/* Basic styles for the resizable and draggable sticky note */
+.resizable {
+    resize: both; /* Enable resizing */
+    overflow: auto; /* Allow scrollbars if content overflows */
+    position: absolute; /* Allows for free placement */
+    border: 1px solid #ccc; /* Border for visibility */
+    padding: 10px; /* Padding inside the div */
+    box-sizing: border-box; /* Include padding and border in width and height */
+}
+
+/* Style for the resize handle */
+.resizable::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"%3E%3Cpath d="M8.707 7.707a1 1 0 0 1-1.414 0L6 7.414 4.707 8.707a1 1 0 0 1-1.414-1.414L4.586 6 3.293 4.707a1 1 0 0 1 1.414-1.414L6 4.586l1.293-1.293a1 1 0 0 1 1.414 1.414L7.414 6l1.293 1.293a1 1 0 0 1 0 1.414z"/%3E%3C/svg%3E') no-repeat center center;
+    background-size: 16px 16px; /* Size of the handle icon */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+/* Basic styles for the resizable and draggable sticky note */
+.resizable {
+    resize: both; /* Enable resizing */
+    overflow: auto; /* Allow scrollbars if content overflows */
+    position: absolute; /* Allows for free placement */
+    border: 1px solid #ccc; /* Border for visibility */
+    padding: 10px; /* Padding inside the div */
+    box-sizing: border-box; /* Include padding and border in width and height */
+    min-width: 100px; /* Minimum width to prevent it from becoming too small */
+    min-height: 100px; /* Minimum height to prevent it from becoming too small */
+}
+
+/* Style for the resize handle */
+.resizable::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"%3E%3Cpath d="M8.707 7.707a1 1 0 0 1-1.414 0L6 7.414 4.707 8.707a1 1 0 0 1-1.414-1.414L4.586 6 3.293 4.707a1 1 0 0 1 1.414-1.414L6 4.586l1.293-1.293a1 1 0 0 1 1.414 1.414L7.414 6l1.293 1.293a1 1 0 0 1 0 1.414z"/%3E%3C/svg%3E') no-repeat center center;
+    background-size: 16px 16px; /* Size of the handle icon */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+
+
